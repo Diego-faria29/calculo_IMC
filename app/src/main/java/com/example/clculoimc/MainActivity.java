@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         Log.d("resultado", String.valueOf(txtcalculo));
 
         if(txtcalculo < 16) dois.setText("Magreza grave. "+ " " + "Seu imc é: " + txtcalculo);
-        else if(txtcalculo > 16 && txtcalculo < 17) dois.setText("Magreza moderada. "+ " " + "Seu imc é: " + txtcalculo);
-        else if(txtcalculo > 17 && txtcalculo < 18.5) dois.setText("Magreza leve. "+ " " + "Seu imc é: " + txtcalculo);
-        else if(txtcalculo > 18.5 && txtcalculo < 25) dois.setText("Saudável. "+ " " + "Seu imc é: " + txtcalculo);
+        else if(txtcalculo == 16) dois.setText("Magreza moderada. "+ " " + "Seu imc é: " + txtcalculo);
+        else if(txtcalculo > 15 && txtcalculo < 18.5) dois.setText("Magreza leve. "+ " " + "Seu imc é: " + txtcalculo);
+        else if(txtcalculo > 18.4 && txtcalculo < 25) dois.setText("Saudável. "+ " " + "Seu imc é: " + txtcalculo);
         else if(txtcalculo > 25 && txtcalculo < 30) dois.setText("Sobrepeso. "+ " " + "Seu imc é: " + txtcalculo);
         else if(txtcalculo > 30 && txtcalculo < 35) dois.setText("Obesidade grau I. "+ " " + "Seu imc é: " + txtcalculo);
         else if(txtcalculo > 35 && txtcalculo < 40) dois.setText("Obesidade grau II. "+ " " + "Seu imc é: " + txtcalculo);
@@ -71,3 +71,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
+
